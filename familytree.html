@@ -198,6 +198,9 @@
 
 	<!-- AR 3D Model-->
 	<a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam' vr-mode-ui='enabled: false' gesture-detector>
+
+		<a-marker-camera preset='custom' type='pattern' url='https://raw.githubusercontent.com/chunqi815/main/pattern-Fredericks.patt'></a-marker-camera>
+
 		<!--Plane for Family Tree image and text -->
 		<a-entity
 			rotation="-90 0 0"
@@ -207,7 +210,7 @@
 			class="clickable"
 			gesture-handler>
 		</a-entity>
-		<a-image src="(insert image here)" rotation="-90 0 0"></a-image>
+		<!-- <a-image src="(insert image here)" rotation="-90 0 0"></a-image> -->
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
 
